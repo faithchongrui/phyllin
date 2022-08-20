@@ -1,30 +1,22 @@
 //
-//  ContentView.swift
+//  SignUpView.swift
 //  phyllin
 //
-//  Created by FAITH CHONG RUI EN stu on 19/8/22.
+//  Created by FAITH CHONG RUI EN stu on 20/8/22.
 //
 
 import SwiftUI
 
-struct LoginView: View {
+struct SignUpView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear
     }
     @State var username = ""
     @State var password = ""
     
-    @State private var showSignup = false
     @State private var showHome = false
     
     var body: some View {
-
-//        if showSignup == false {
-//            LoginView()
-//        } else {
-//            SignUpView()
-//        }
-
         ZStack {
             Image("bgvector")
             VStack(alignment: .center) {
@@ -41,7 +33,7 @@ struct LoginView: View {
                 //                                Image("myImage")
                 //                                        .clipShape(Circle())
                 //                                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                Text("login")
+                Text("sign up")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -57,23 +49,6 @@ struct LoginView: View {
                     .background(Color.clear)
                     .frame(width: 400, height: 150, alignment: .center)
                     .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
-                    
-                    Button {
-                        //                                loginScreenViewModel.nextScreen = "HomeScreenView"
-                        print("omg hi")
-                        showHome = true
-                    } label: {
-                        Image(systemName: "checkmark")
-                            .foregroundColor(.white)
-                            .padding()
-                            .scaleEffect(1.6)
-                        
-                            .background(LinearGradient(colors: [.blue, .cyan], startPoint: .leading, endPoint: .trailing))
-                            .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
-                            .cornerRadius(20)
-                            .position(x: 350, y: 80)
-                        
-                    }
                 }
                 .position(x: 215, y: 120)
             }
@@ -128,7 +103,7 @@ struct LoginView: View {
                 //                                    .onTapGesture {         loginScreenViewModel.facebookSignIn()
                 //                                    }
                 .padding()
-                .frame(width: getRelativeWidth(290.0), height: getRelativeHeight(52.0),
+                .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
                        alignment: .center)
                 .background(.blue)
                 .cornerRadius(20)
@@ -136,10 +111,10 @@ struct LoginView: View {
                 
                 Button {
                     print("mg hi")
-                   showSignup = true
+                    showHome = true
                 } label: {
                     HStack {
-                        Text("sign up")
+                        Text("create account")
                             .font(.system(size: 40))
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -154,9 +129,7 @@ struct LoginView: View {
                 //                                .onTapGesture {
                 //                                    loginScreenViewModel.nextScreen = "SignUpScreenView"
                 //                                }
-               
-                
-                .frame(width: getRelativeWidth(280), height: getRelativeHeight(53.0),
+                .frame(width: getRelativeWidth(312.0), height: getRelativeHeight(53.0),
                        alignment: .center)
                 .background(.teal)
                 .cornerRadius(20)
@@ -172,7 +145,6 @@ struct LoginView: View {
         
         .background(LinearGradient(gradient: Gradient(colors: [Colours.tealgreen, Colours.cyanblue]),
                                    startPoint: .topLeading, endPoint: .bottomTrailing))
-        .navigate(to: SignUpView(), when: $showSignup)
         .navigate(to: HomeView(), when: $showHome)
         //                    Group {
         //                        NavigationLink(destination: HomeScreenView(),
@@ -194,9 +166,10 @@ struct LoginView: View {
 
 
 
-struct LoginView_Previews: PreviewProvider {
+
+struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        SignUpView()
     }
 }
 
