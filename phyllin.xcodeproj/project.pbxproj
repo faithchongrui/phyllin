@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321F028AF5AA60031ED28 /* phyllinApp.swift */; };
-		201321F328AF5AA60031ED28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321F228AF5AA60031ED28 /* ContentView.swift */; };
+		201321F328AF5AA60031ED28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321F228AF5AA60031ED28 /* LoginView.swift */; };
 		201321F528AF5AA80031ED28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201321F428AF5AA80031ED28 /* Assets.xcassets */; };
 		201321F828AF5AA80031ED28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201321F728AF5AA80031ED28 /* Preview Assets.xcassets */; };
+		201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321FE28AF5F510031ED28 /* ViewportHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		201321ED28AF5AA60031ED28 /* phyllin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phyllin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201321F028AF5AA60031ED28 /* phyllinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phyllinApp.swift; sourceTree = "<group>"; };
-		201321F228AF5AA60031ED28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		201321F228AF5AA60031ED28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		201321F428AF5AA80031ED28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		201321F728AF5AA80031ED28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		201321FE28AF5F510031ED28 /* ViewportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewportHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
-				201321F228AF5AA60031ED28 /* ContentView.swift */,
+				201321F228AF5AA60031ED28 /* LoginView.swift */,
+				201321FE28AF5F510031ED28 /* ViewportHelper.swift */,
 				201321F428AF5AA80031ED28 /* Assets.xcassets */,
 				201321F628AF5AA80031ED28 /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201321F328AF5AA60031ED28 /* ContentView.swift in Sources */,
+				201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */,
+				201321F328AF5AA60031ED28 /* LoginView.swift in Sources */,
 				201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
