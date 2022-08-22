@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var SearchQuery = ""
+    @State private var searchText = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                TextField("What are you looking for?", text: $SearchQuery)
+            }
+            .navigationTitle("")
+        }
     }
 }
 
