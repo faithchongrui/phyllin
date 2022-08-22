@@ -16,6 +16,7 @@
 		201321F528AF5AA80031ED28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201321F428AF5AA80031ED28 /* Assets.xcassets */; };
 		201321F828AF5AA80031ED28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201321F728AF5AA80031ED28 /* Preview Assets.xcassets */; };
 		201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321FE28AF5F510031ED28 /* ViewportHelper.swift */; };
+		20335E1728B320060020F549 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20335E1628B320060020F549 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		201321F428AF5AA80031ED28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		201321F728AF5AA80031ED28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		201321FE28AF5F510031ED28 /* ViewportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewportHelper.swift; sourceTree = "<group>"; };
+		20335E1628B320060020F549 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
 				201321F228AF5AA60031ED28 /* LoginView.swift */,
 				1794326B28B31A8100D679DC /* HomeView.swift */,
+				20335E1628B320060020F549 /* WelcomeView.swift */,
 				200B489A28B135650057EA08 /* Navigation.swift */,
 				200B489428B126FE0057EA08 /* SignUpView.swift */,
 				200B489628B127630057EA08 /* ColourConstants.swift */,
@@ -156,6 +159,7 @@
 				1794326C28B31A8100D679DC /* HomeView.swift in Sources */,
 				201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */,
 				200B489B28B135650057EA08 /* Navigation.swift in Sources */,
+				20335E1728B320060020F549 /* WelcomeView.swift in Sources */,
 				200B489728B127630057EA08 /* ColourConstants.swift in Sources */,
 				201321F328AF5AA60031ED28 /* LoginView.swift in Sources */,
 				201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */,
