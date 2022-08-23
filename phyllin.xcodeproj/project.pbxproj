@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1794326C28B31A8100D679DC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794326B28B31A8100D679DC /* HomeView.swift */; };
 		200B489528B126FE0057EA08 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B489428B126FE0057EA08 /* SignUpView.swift */; };
 		200B489728B127630057EA08 /* ColourConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B489628B127630057EA08 /* ColourConstants.swift */; };
-		200B489928B12DE50057EA08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B489828B12DE50057EA08 /* HomeView.swift */; };
 		200B489B28B135650057EA08 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B489A28B135650057EA08 /* Navigation.swift */; };
 		201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321F028AF5AA60031ED28 /* phyllinApp.swift */; };
 		201321F328AF5AA60031ED28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321F228AF5AA60031ED28 /* LoginView.swift */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1794326B28B31A8100D679DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		200B489428B126FE0057EA08 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		200B489628B127630057EA08 /* ColourConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourConstants.swift; sourceTree = "<group>"; };
-		200B489828B12DE50057EA08 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		200B489A28B135650057EA08 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		201321ED28AF5AA60031ED28 /* phyllin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phyllin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201321F028AF5AA60031ED28 /* phyllinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phyllinApp.swift; sourceTree = "<group>"; };
@@ -65,9 +65,9 @@
 			children = (
 				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
 				201321F228AF5AA60031ED28 /* LoginView.swift */,
+				1794326B28B31A8100D679DC /* HomeView.swift */,
 				20335E1628B320060020F549 /* WelcomeView.swift */,
 				200B489A28B135650057EA08 /* Navigation.swift */,
-				200B489828B12DE50057EA08 /* HomeView.swift */,
 				200B489428B126FE0057EA08 /* SignUpView.swift */,
 				200B489628B127630057EA08 /* ColourConstants.swift */,
 				201321FE28AF5F510031ED28 /* ViewportHelper.swift */,
@@ -156,11 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				200B489528B126FE0057EA08 /* SignUpView.swift in Sources */,
+				1794326C28B31A8100D679DC /* HomeView.swift in Sources */,
 				201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */,
 				200B489B28B135650057EA08 /* Navigation.swift in Sources */,
 				20335E1728B320060020F549 /* WelcomeView.swift in Sources */,
 				200B489728B127630057EA08 /* ColourConstants.swift in Sources */,
-				200B489928B12DE50057EA08 /* HomeView.swift in Sources */,
 				201321F328AF5AA60031ED28 /* LoginView.swift in Sources */,
 				201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */,
 			);
