@@ -39,7 +39,7 @@ struct WelcomeView: View {
                 //                                Image("myImage")
                 //                                        .clipShape(Circle())
                 //                                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                Text("login")
+                Text("Login")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
                     .foregroundColor(.white)

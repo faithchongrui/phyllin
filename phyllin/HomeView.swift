@@ -12,12 +12,25 @@ struct HomeView: View {
     @State private var searchText = ""
     
     var body: some View {
-        NavigationView {
-            Form {
-                TextField("What are you looking for?", text: $SearchQuery)
-            }
-            .navigationTitle("")
+        TabView {
+            Text("Home")
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            Text("Events")
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Events")
+                }
+            Text("Profile")
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Profile")
+                }
+            
         }
+        .accentColor(Colours.tealgreen)
     }
 }
 
