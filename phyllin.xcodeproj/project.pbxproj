@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1722462B28B847BC00D1DF4B /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722462A28B847BC00D1DF4B /* ProductItemView.swift */; };
+		1722462E28B848F400D1DF4B /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 1722462D28B848F400D1DF4B /* category.json */; };
 		1794326C28B31A8100D679DC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794326B28B31A8100D679DC /* HomeView.swift */; };
 		200B489528B126FE0057EA08 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B489428B126FE0057EA08 /* SignUpView.swift */; };
 		200B489728B127630057EA08 /* ColourConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B489628B127630057EA08 /* ColourConstants.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1722462A28B847BC00D1DF4B /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		1722462D28B848F400D1DF4B /* category.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		1794326B28B31A8100D679DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		200B489428B126FE0057EA08 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		200B489628B127630057EA08 /* ColourConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourConstants.swift; sourceTree = "<group>"; };
@@ -44,6 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1722462928B8478B00D1DF4B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				1722462A28B847BC00D1DF4B /* ProductItemView.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		1722462C28B8489100D1DF4B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1722462D28B848F400D1DF4B /* category.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		201321E428AF5AA60031ED28 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +83,8 @@
 		201321EF28AF5AA60031ED28 /* phyllin */ = {
 			isa = PBXGroup;
 			children = (
+				1722462C28B8489100D1DF4B /* Data */,
+				1722462928B8478B00D1DF4B /* Product */,
 				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
 				201321F228AF5AA60031ED28 /* LoginView.swift */,
 				1794326B28B31A8100D679DC /* HomeView.swift */,
@@ -144,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				201321F828AF5AA80031ED28 /* Preview Assets.xcassets in Resources */,
+				1722462E28B848F400D1DF4B /* category.json in Resources */,
 				201321F528AF5AA80031ED28 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +182,7 @@
 				1794326C28B31A8100D679DC /* HomeView.swift in Sources */,
 				201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */,
 				200B489B28B135650057EA08 /* Navigation.swift in Sources */,
+				1722462B28B847BC00D1DF4B /* ProductItemView.swift in Sources */,
 				20335E1728B320060020F549 /* WelcomeView.swift in Sources */,
 				200B489728B127630057EA08 /* ColourConstants.swift in Sources */,
 				201321F328AF5AA60031ED28 /* LoginView.swift in Sources */,
