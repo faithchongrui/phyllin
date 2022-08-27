@@ -13,15 +13,9 @@ struct WelcomeView: View {
     }
     
     @State private var showSignup = false
-    @State private var showHome = false
+    @State private var showLogin = false
     
     var body: some View {
-
-//        if showSignup == false {
-//            LoginView()
-//        } else {
-//            SignUpView()
-//        }
 
         ZStack {
             Image("bgvector")
@@ -33,13 +27,9 @@ struct WelcomeView: View {
                         .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                     Image("logo")
                 }
-                .position(x: 220)
+                .position(x: 210)
                 
-                
-                //                                Image("myImage")
-                //                                        .clipShape(Circle())
-                //                                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                Text("Login")
+                Text("Phyllin")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -47,54 +37,29 @@ struct WelcomeView: View {
 
                
             }
-            .padding(.bottom, 602.0)
-            .position(x: 215, y: 650)
+            .padding(.bottom, 700)
+            .position(x: 220, y: 650)
             VStack(alignment: .center) {
-                Button {
-                    print("omg hi")
-                } label: {
-                    HStack {
-                        Image("ggl")
-                        
-                        Text("sign in with google")
-                            .font(.system(size: 40))
-                            .fontWeight(.semibold)
-                            .foregroundColor(.gray)
-                            .minimumScaleFactor(0.5)
-                    }
-                }
-                //                                    .hideNavigationBar()
-                //                                    .onTapGesture {         loginScreenViewModel.googleSignIn()
-                //                                    }
-                .padding()
-                .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
-                       alignment: .center)
-                .background(.white)
-                .cornerRadius(20)
-                .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                 
                 Button {
-                    print("omg no")
+                    print("mg no")
+                   showLogin = true
                 } label: {
-                    HStack {
-                        Image("fb")
+//                        Text("Login")
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(.white)
-                        
-                        Text("sign in with facebook")
+                        Text("Login")
                             .font(.system(size: 40))
                             .fontWeight(.semibold)
-                            .foregroundColor(.white)
+                            .foregroundColor(Colours.evergreen)
                             .minimumScaleFactor(0.5)
+                            .padding()
                     }
-
                 }
-                //                                    .hideNavigationBar()
-                //                                    .onTapGesture {         loginScreenViewModel.facebookSignIn()
-                //                                    }
-                .padding()
-                .frame(width: getRelativeWidth(290.0), height: getRelativeHeight(52.0),
+                .frame(width: getRelativeWidth(350), height: getRelativeHeight(70),
                        alignment: .center)
-                .background(.blue)
+//                .background(.clear)
                 .cornerRadius(20)
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                 
@@ -102,7 +67,7 @@ struct WelcomeView: View {
                     print("mg hi")
                    showSignup = true
                 } label: {
-                        Text("sign up")
+                        Text("Sign Up")
                             .font(.system(size: 40))
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -111,49 +76,24 @@ struct WelcomeView: View {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(.white, lineWidth: 5)
-                                    .frame(width: getRelativeWidth(280), height: getRelativeHeight(53.0),
+                                    .frame(width: getRelativeWidth(350), height: getRelativeHeight(70),
                                            alignment: .center)
                             )
                     
                 }
-                //                                .onTapGesture {
-                //                                    loginScreenViewModel.nextScreen = "SignUpScreenView"
-                //                                }
-               
-                
-                .frame(width: getRelativeWidth(280), height: getRelativeHeight(53.0),
+                .frame(width: getRelativeWidth(350), height: getRelativeHeight(70),
                        alignment: .center)
                 .background(.clear)
                 .cornerRadius(20)
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
 
             }
-            .position(x: 190, y: 950)
-            //                        }
-            //                        .hideNavigationBar()
-            
-            .position(x: 205, y: 190)
-            .padding()
+            .position(x: 215, y: 550)
         }
         
-        .background(LinearGradient(gradient: Gradient(colors: [Colours.tealgreen, Colours.cyanblue]),
-                                   startPoint: .topLeading, endPoint: .bottomTrailing))
+        .background(Colours.evergreen)
         .navigate(to: SignUpView(), when: $showSignup)
-        .navigate(to: HomeView(), when: $showHome)
-        //                    Group {
-        //                        NavigationLink(destination: HomeScreenView(),
-        //                                       tag: "HomeScreenView",
-        //                                       selection: $loginScreenViewModel.nextScreen,
-        //                                       label: {
-        //                            EmptyView()
-        //                        })
-        //                        NavigationLink(destination: SignUpScreenView(),
-        //                                       tag: "SignUpScreenView",
-        //                                       selection: $loginScreenViewModel.nextScreen,
-        //                                       label: {
-        //                            EmptyView()
-        //                        })
-        //                    }
+        .navigate(to: LoginView(), when: $showLogin)
     }
     
 }
@@ -165,6 +105,5 @@ struct WelcomeView_Previews: PreviewProvider {
         WelcomeView()
     }
 }
-
 
 
