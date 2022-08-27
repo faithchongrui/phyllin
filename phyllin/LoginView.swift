@@ -19,12 +19,6 @@ struct LoginView: View {
     
     var body: some View {
 
-//        if showSignup == false {
-//            LoginView()
-//        } else {
-//            SignUpView()
-//        }
-
         ZStack {
             Image("bgvector")
             VStack(alignment: .center) {
@@ -37,10 +31,6 @@ struct LoginView: View {
                 }
                 .position(x: 220)
                 
-                
-                //                                Image("myImage")
-                //                                        .clipShape(Circle())
-                //                                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 Text("login")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
@@ -59,7 +49,6 @@ struct LoginView: View {
                     .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                     
                     Button {
-                        //                                loginScreenViewModel.nextScreen = "HomeScreenView"
                         print("omg hi")
                         showHome = true
                     } label: {
@@ -99,9 +88,6 @@ struct LoginView: View {
                             .minimumScaleFactor(0.5)
                     }
                 }
-                //                                    .hideNavigationBar()
-                //                                    .onTapGesture {         loginScreenViewModel.googleSignIn()
-                //                                    }
                 .padding()
                 .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
                        alignment: .center)
@@ -124,9 +110,6 @@ struct LoginView: View {
                     }
 
                 }
-                //                                    .hideNavigationBar()
-                //                                    .onTapGesture {         loginScreenViewModel.facebookSignIn()
-                //                                    }
                 .padding()
                 .frame(width: getRelativeWidth(290.0), height: getRelativeHeight(52.0),
                        alignment: .center)
@@ -151,11 +134,6 @@ struct LoginView: View {
                             .scaleEffect(1.6)
                     }
                 }
-                //                                .onTapGesture {
-                //                                    loginScreenViewModel.nextScreen = "SignUpScreenView"
-                //                                }
-               
-                
                 .frame(width: getRelativeWidth(280), height: getRelativeHeight(53.0),
                        alignment: .center)
                 .background(.teal)
@@ -163,9 +141,6 @@ struct LoginView: View {
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
             }
             .position(x: 190, y: 950)
-            //                        }
-            //                        .hideNavigationBar()
-            
             .position(x: 205, y: 190)
             .padding()
         }
@@ -174,22 +149,7 @@ struct LoginView: View {
                                    startPoint: .topLeading, endPoint: .bottomTrailing))
         .navigate(to: SignUpView(), when: $showSignup)
         .navigate(to: HomeView(), when: $showHome)
-        //                    Group {
-        //                        NavigationLink(destination: HomeScreenView(),
-        //                                       tag: "HomeScreenView",
-        //                                       selection: $loginScreenViewModel.nextScreen,
-        //                                       label: {
-        //                            EmptyView()
-        //                        })
-        //                        NavigationLink(destination: SignUpScreenView(),
-        //                                       tag: "SignUpScreenView",
-        //                                       selection: $loginScreenViewModel.nextScreen,
-        //                                       label: {
-        //                            EmptyView()
-        //                        })
-        //                    }
     }
-    
 }
 
 

@@ -23,7 +23,7 @@ struct HomeView: View {
                                     .frame(width: 200, height: 200)
                                     .background(.red)
                             }
-                            .frame(maxWidth: .infinity)
+//                            .frame(maxWidth: .infinity)
                     }
                     VStack(spacing: 10) {
                             ForEach(0..<10) {
@@ -33,7 +33,7 @@ struct HomeView: View {
                                     .frame(width: 200, height: 200)
                                     .background(.red)
                             }
-                            .frame(maxWidth: .infinity)
+//                            .frame(maxWidth: .infinity)
                         }
                 }
                 
@@ -45,11 +45,13 @@ struct HomeView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
+            
             Text("Events")
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Events")
                 }
+            
             Text("Profile")
                 .tabItem {
                     Image(systemName: "person.crop.circle")
