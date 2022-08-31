@@ -1,0 +1,319 @@
+{
+    "Clothing" : [
+        {
+            "id" : 1
+            "name" : "Skirt"
+        },
+        {
+            "id" : 2
+            "name" : "Patchwork Twirler Dress"
+        },
+        {
+            "id" : 3
+            "name" : "Top"
+        },
+        {
+            "id" : 4
+            "name" : "Pants"
+        },
+        {
+            "id" : 5
+            "name" : "Scarf"
+        },
+        {
+            "id" : 6
+            "name" : "Baby Slippers"
+        },
+        {
+            "id" : 7
+            "name" : "Bandana"
+        },
+        {
+            "id" : 8
+            "name" : "Shirts"
+        },
+        {
+            "id" : 9
+            "name" : "Ties"
+        },
+    ],
+    "Bags/Holders" : [
+        {
+            "id" : 10
+            "name" : "Pouch"
+        },
+        {
+            "id" : 11
+            "name" : "Tote Bags"
+        },
+        {
+            "id" : 12
+            "name" : "Handbags"
+        },
+        {
+            "id" : 13
+            "name" : "Bifold Wallet"
+        },
+        {
+            "id" : 14
+            "name" : "Pencil Case"
+        },
+        {
+            "id" : 15
+            "name" : "Fabric Scrap Basket"
+        },
+        {
+            "id" : 16
+            "name" : "Mask Holder"
+        },
+        {
+            "id" : 17
+            "name" : "Phone Holder"
+        },
+        {
+            "id" : 18
+            "name" : "Tissue Holder"
+        },
+        {
+            "id" : 19
+            "name" : "Passport Cover"
+        },
+        {
+            "id" : 20
+            "name" : "Sanitiser Jacket"
+        },
+        {
+            "id" : 21
+            "name" : "Fabric Organiser"
+        },
+        {
+            "id" : 22
+            "name" : "Pot Holder"
+        },
+        {
+            "id" : 23
+            "name" : "CD Holder"
+        },
+        {
+            "id" : 24
+            "name" : "CD Holder"
+        },
+        {
+            "id" : 25
+            "name" : "Lunch Bag"
+        },
+        {
+            "id" : 26
+            "name" : "Sandwich Bag"
+        },
+        {
+            "id" : 27
+            "name" : "Fabric Gathered Clutch"
+        },
+        {
+            "id" : 28
+            "name" : "Cellphone Wallet"
+        },
+        {
+            "id" : 29
+            "name" : "Fabric Beverage Holder"
+        },
+        {
+            "id" : 30
+            "name" : "Slouchy Sling Bag"
+        },
+        {
+            "id" : 31
+            "name" : "Circle Zip Earbud Pouch"
+        },
+        {
+            "id" : 32
+            "name" : "TV Cover"
+        },
+        {
+            "id" : 33
+            "name" : "Grocery Bag"
+        },
+        {
+            "id" : 34
+            "name" : "Fabric Bowl"
+        },
+        {
+            "id" : 35
+            "name" : "Half Square Triangle"
+        },
+        {
+            "id" : 36
+            "name" : "Coin Purse"
+        },
+        {
+            "id" : 37
+            "name" : "Drawstring Bag"
+        },
+    ],
+    "Households" : [
+        {
+            "id" : 38
+            "name" : "Cloth"
+        },
+        {
+            "id" : 39
+            "name" : "Rag"
+        },
+        {
+            "id" : 40
+            "name" : "Floormat"
+        },
+        {
+            "id" : 41
+            "name" : "Rag Rug"
+        },
+        {
+            "id" : 42
+            "name" : "Pillow Case"
+        },
+        {
+            "id" : 43
+            "name" : "Coaster"
+        },
+        {
+            "id" : 44
+            "name" : "Fabric Drink Sleeve"
+        },
+        {
+            "id" : 45
+            "name" : "Apron"
+        },
+        {
+            "id" : 46
+            "name" : "Cord Keeper"
+        },
+        {
+            "id" : 47
+            "name" : "Sleep Mask"
+        },
+        {
+            "id" : 48
+            "name" : "Baby Blanket"
+        },
+        {
+            "id" : 49
+            "name" : "Oven Mitts"
+        },
+        {
+            "id" : 50
+            "name" : "Keyboard Wrist Rest"
+        },
+        {
+            "id" : 51
+            "name" : "Bowl Cover"
+        },
+    ],
+    "Pets" : [
+        {
+            "id" : 52
+            "name" : "Bone Chew Toy"
+        },
+        {
+            "id" : 53
+            "name" : "Pet Shirt"
+        },
+        {
+            "id" : 54
+            "name" : "Pet Couch"
+        },
+        {
+            "id" : 55
+            "name" : "Mouse Toy"
+        },
+        {
+            "id" : 56
+            "name" : "Hanging String Toy"
+        },
+        {
+            "id" : 57
+            "name" : "Collar"
+        },
+        {
+            "id" : 58
+            "name" : "Fabric Pet Food Bowl"
+        },
+        {
+            "id" : 59
+            "name" : "Fabric Ball"
+        },
+    ],
+    "Decor" : [
+        {
+            "id" : 60
+            "name" : "Banner"
+        },
+        {
+            "id" : 61
+            "name" : "Christmas Stockings"
+        },
+        {
+            "id" : 62
+            "name" : "Fabric Gift Tags"
+        },
+        {
+            "id" : 63
+            "name" : "Table Runner"
+        },
+        {
+            "id" : 64
+            "name" : "Tattered Flowers"
+        },
+        {
+            "id" : 65
+            "name" : "Denim and Fabric Scrap Pots"
+        },
+        {
+            "id" : 66
+            "name" : "Fabric Scrap Wreath"
+        },
+    ],
+    "Accessories" : [
+        {
+            "id" : 67
+            "name" : "Keychain"
+        },
+        {
+            "id" : 68
+            "name" : "Bookmark"
+        },
+        {
+            "id" : 69
+            "name" : "Scrunchies"
+        },
+        {
+            "id" : 70
+            "name" : "Headbands"
+        },
+        {
+            "id" : 71
+            "name" : "Bracelets"
+        },
+        {
+            "id" : 72
+            "name" : "Fabric Covered Picture Frame"
+        },
+        {
+            "id" : 73
+            "name" : "Ruffle Necklace"
+        },
+        {
+            "id" : 74
+            "name" : "Hairpins"
+        },
+        {
+            "id" : 75
+            "name" : "Fabric Scraps Headband"
+        },
+        {
+            "id" : 76
+            "name" : "Fabric Alphabet"
+        }
+    ]
+    
+}
