@@ -11,8 +11,10 @@ struct Product: Codable, Identifiable {
     
     var id: Int
     var name: String
-    var price: Int
-    var formattedPrice: String {
-        "$\(price)"
-    }
+//    var price: Int
+//    var formattedPrice: String {
+//        "$\(price)"
+//    }
+    var category: String
+    var image: String
 }
