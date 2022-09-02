@@ -12,6 +12,7 @@ struct phyllinApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .environmentObject(Shop())
         }
     }
 }

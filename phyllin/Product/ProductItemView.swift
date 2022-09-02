@@ -17,11 +17,18 @@ struct ProductItemView: View {
                     .scaledToFit()
                     .padding(10)
             }
-            .cornerRadius(12)
+            .cornerRadius(20)
+            
+            Text(product.name)
+                .font(.title3)
+                .fontWeight(.black)
+            
+            Text("$\(product.price)")
+                .fontWeight(.semibold)
+                .foregroundColor(.gray)
         }
-        Text(product.name)
-            .font(.title3)
-            .fontWeight(.black)
+        
+        
         
     }
 }
@@ -29,7 +36,7 @@ struct ProductItemView: View {
 struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
         ProductItemView(product: products[0])
-            .previewLayout(.fixed(width: 200, height: 200))
+            .previewLayout(.fixed(width: 200, height: 300))
             .padding()
     }
 }

@@ -9,12 +9,14 @@ import Foundation
 
 struct Product: Codable, Identifiable {
     
-    var id: Int
-    var name: String
+    let id: Int
+    let name: String
+    let category: String
+    let image: String
+    let price: Int
+}
 //    var price: Int
 //    var formattedPrice: String {
 //        "$\(price)"
 //    }
-    var category: String
-    var image: String
-}
+    
