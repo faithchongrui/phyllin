@@ -3,456 +3,532 @@
             "id" : 1,
             "name" : "Skirt",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 2,
             "name" : "Patchwork Twirler Dress",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 3,
             "name" : "Top",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 4,
             "name" : "Pants",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 5,
             "name" : "Scarf",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 6,
             "name" : "Baby Slippers",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 7,
             "name" : "Bandana",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 8,
             "name" : "Shirts",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 9,
             "name" : "Ties",
             "category" : "Clothing",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 10,
             "name" : "Pouch",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 11,
             "name" : "Tote Bags",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 12,
             "name" : "Handbags",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 13,
             "name" : "Bifold Wallet",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 14,
             "name" : "Pencil Case",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 15,
             "name" : "Fabric Scrap Basket",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 16,
             "name" : "Mask Holder",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 17,
             "name" : "Phone Holder",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 18,
             "name" : "Tissue Holder",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 19,
             "name" : "Passport Cover",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 20,
             "name" : "Sanitiser Jacket",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 21,
             "name" : "Fabric Organiser",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 22,
             "name" : "Pot Holder",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 23,
             "name" : "CD Holder",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 24,
             "name" : "CD Holder",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 25,
             "name" : "Lunch Bag",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 26,
             "name" : "Sandwich Bag",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 27,
             "name" : "Fabric Gathered Clutch",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 28,
             "name" : "Cellphone Wallet",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 29,
             "name" : "Fabric Beverage Holder",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 30,
             "name" : "Slouchy Sling Bag",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 31,
             "name" : "Circle Zip Earbud Pouch",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 32,
             "name" : "TV Cover",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 33,
             "name" : "Grocery Bag",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 34,
             "name" : "Fabric Bowl",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 35,
             "name" : "Half Square Triangle",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 36,
             "name" : "Coin Purse",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 37,
             "name" : "Drawstring Bag",
             "category" : "Bags/Holders",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 38,
             "name" : "Cloth",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 39,
             "name" : "Rag",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 40,
             "name" : "Floormat",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 41,
             "name" : "Rag Rug",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 42,
             "name" : "Pillow Case",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 43,
             "name" : "Coaster",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 44,
             "name" : "Fabric Drink Sleeve",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 45,
             "name" : "Apron",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 46,
             "name" : "Cord Keeper",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 47,
             "name" : "Sleep Mask",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 48,
             "name" : "Baby Blanket",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 49,
             "name" : "Oven Mitts",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 50,
             "name" : "Keyboard Wrist Rest",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 51,
             "name" : "Bowl Cover",
             "category" : "Household",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 52,
             "name" : "Bone Chew Toy",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 53,
             "name" : "Pet Shirt",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 54,
             "name" : "Pet Couch",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 55,
             "name" : "Mouse Toy",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 56,
             "name" : "Hanging String Toy",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 57,
             "name" : "Collar",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 58,
             "name" : "Fabric Pet Food Bowl",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 59,
             "name" : "Fabric Ball",
             "category" : "Pets",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 60,
             "name" : "Banner",
             "category" : "Decor",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 61,
             "name" : "Christmas Stockings",
             "category" : "Decor",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 62,
             "name" : "Fabric Gift Tags",
             "category" : "Decor",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 63,
             "name" : "Table Runner",
             "category" : "Decor",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 64,
             "name" : "Tattered Flowers",
             "category" : "Decor",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 65,
             "name" : "Denim and Fabric Scrap Pots",
             "category" : "Decor",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 66,
             "name" : "Fabric Scrap Wreath",
             "category" : "Decor",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 67,
             "name" : "Keychain",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 68,
             "name" : "Bookmark",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 69,
             "name" : "Scrunchies",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 70,
             "name" : "Headbands",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 71,
             "name" : "Bracelets",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 72,
             "name" : "Fabric Covered Picture Frame",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 73,
             "name" : "Ruffle Necklace",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 74,
             "name" : "Hairpins",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 75,
             "name" : "Fabric Scraps Headband",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         },
         {
             "id" : 76,
             "name" : "Fabric Alphabet",
             "category" : "Accessories",
-            "image" : "baby_slippers"
+            "image" : "baby_slippers",
+            "price" : 0
         }
 ]

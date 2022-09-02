@@ -9,19 +9,22 @@ import Foundation
 
 extension Bundle {
     
-    func decode<T>(_ file: String) -> T where T: Codable {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("Failed to locate \(file) in bundle")
-        }
-        
-        guard let data = try? Data(contentsOf: url) else {
-            fatalError("Failed to load \(file) from bundle")
-        }
-        
-        guard let decodedData = try? JSONDecoder().decode(T.self, from: data) else {
-            fatalError("Failed to decode \(file) from bundle")
-        }
-        return decodedData
+    func decode<T: Decodable>(_ type: T.Type, from filename: String) -> T {
+            guard let json = url(forResource: filename, withExtension: nil) else {
+                fatalError("Failed to locate \(filename) in app bundle.")
+            }
+
+            guard let jsonData = try? Data(contentsOf: json) else {
+                fatalError("Failed to load \(filename) from app bundle.")
+            }
+
+            let decoder = JSONDecoder()
+
+            guard let result = try? decoder.decode(T.self, from: jsonData) else {
+                fatalError("Failed to decode \(filename) from app bundle.")
+            }
+
+            return result
     }
     
 }

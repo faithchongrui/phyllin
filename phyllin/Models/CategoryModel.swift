@@ -9,6 +9,6 @@ import Foundation
 
 struct Category: Codable, Identifiable {
     
-    var id: Int
-    var name: String
+    let id: Int
+    let name: String
 }
