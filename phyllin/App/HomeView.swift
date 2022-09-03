@@ -20,8 +20,7 @@ struct HomeView: View {
                 }
                 
                 
-            }.frame(width: 200, height: 700, alignment: .center)
-
+            }.frame(width: 400, height: 700, alignment: .center)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")

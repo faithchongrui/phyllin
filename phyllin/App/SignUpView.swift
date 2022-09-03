@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignUpView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear
     }
-    @State var username = ""
+    @State var email = ""
     @State var password = ""
     
     @State private var showHome = false
@@ -33,7 +34,7 @@ struct SignUpView: View {
                 //                                Image("myImage")
                 //                                        .clipShape(Circle())
                 //                                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                Text("sign up")
+                Text("Sign Up")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -42,8 +43,8 @@ struct SignUpView: View {
                 
                 ZStack {
                     Form {
-                        TextField("username", text: $username)
-                        TextField("password", text: $password)
+                        TextField("Email", text: $email)
+                        SecureField("Password", text: $password)
                     }
 
                     .background(Color.clear)
@@ -55,6 +56,7 @@ struct SignUpView: View {
             .padding(.bottom, 602.0)
             .position(x: 215, y: 650)
             VStack(alignment: .center) {
+                
                 
                 Text("or")
                     .font(.system(size: 30))
@@ -110,8 +112,8 @@ struct SignUpView: View {
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                 
                 Button {
-                    print("mg hi")
-                    showHome = true
+                    register()
+//                    showHome = true
                 } label: {
                     HStack {
                         Text("create account")
@@ -160,6 +162,15 @@ struct SignUpView: View {
         //                            EmptyView()
         //                        })
         //                    }
+    }
+    
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+        }
     }
     
 }
