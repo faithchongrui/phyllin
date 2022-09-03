@@ -17,19 +17,23 @@ struct HomeView: View {
                 VStack(spacing: 0) {
                     ProductGridView()
                         .padding(15)
+
                 }
                 
                 
             }.frame(width: 400, height: 700, alignment: .center)
+
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
+            
             Text("Events")
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Events")
                 }
+            
             Text("Profile")
                 .tabItem {
                     Image(systemName: "person.crop.circle")
