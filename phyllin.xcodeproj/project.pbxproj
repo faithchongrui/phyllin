@@ -118,17 +118,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		17BCC97C28C2404700ACCB1E /* App */ = {
-			isa = PBXGroup;
-			children = (
-				201321F228AF5AA60031ED28 /* LoginView.swift */,
-				200B489428B126FE0057EA08 /* SignUpView.swift */,
-				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
-				1794326B28B31A8100D679DC /* HomeView.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
 		201321E428AF5AA60031ED28 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +143,10 @@
 				1722463D28B9B15F00D1DF4B /* Models */,
 				1722462C28B8489100D1DF4B /* Data */,
 				1722462928B8478B00D1DF4B /* Product */,
-				17BCC97C28C2404700ACCB1E /* App */,
+				201321F228AF5AA60031ED28 /* LoginView.swift */,
+				200B489428B126FE0057EA08 /* SignUpView.swift */,
+				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
+				1794326B28B31A8100D679DC /* HomeView.swift */,
 				201321F428AF5AA80031ED28 /* Assets.xcassets */,
 				201321F628AF5AA80031ED28 /* Preview Content */,
 				1722463228B9A7DA00D1DF4B /* Extension */,
