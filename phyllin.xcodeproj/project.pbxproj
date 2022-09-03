@@ -70,16 +70,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1722462928B8478B00D1DF4B /* Product */ = {
-			isa = PBXGroup;
-			children = (
-				1722462A28B847BC00D1DF4B /* ProductItemView.swift */,
-				17BCC97628C1EED700ACCB1E /* ProductGridView.swift */,
-				17BCC97828C1EF9200ACCB1E /* TitleView.swift */,
-			);
-			path = Product;
-			sourceTree = "<group>";
-		};
 		1722462C28B8489100D1DF4B /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +132,9 @@
 				1722464328B9B23400D1DF4B /* Utilities */,
 				1722463D28B9B15F00D1DF4B /* Models */,
 				1722462C28B8489100D1DF4B /* Data */,
-				1722462928B8478B00D1DF4B /* Product */,
+				1722462A28B847BC00D1DF4B /* ProductItemView.swift */,
+				17BCC97628C1EED700ACCB1E /* ProductGridView.swift */,
+				17BCC97828C1EF9200ACCB1E /* TitleView.swift */,
 				201321F228AF5AA60031ED28 /* LoginView.swift */,
 				200B489428B126FE0057EA08 /* SignUpView.swift */,
 				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
