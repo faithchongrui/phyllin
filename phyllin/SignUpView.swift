@@ -15,6 +15,7 @@ struct SignUpView: View {
     @State var password = ""
     
     @State private var showHome = false
+    @State private var isEditing = false
     
     var body: some View {
         ZStack {
@@ -43,9 +44,10 @@ struct SignUpView: View {
                 ZStack {
                     Form {
                         TextField("username", text: $username)
-                        TextField("password", text: $password)
+                            .textInputAutocapitalization(.never)
+                        SecureField("password", text: $password)
+                            .textInputAutocapitalization(.never)
                     }
-
                     .background(Color.clear)
                     .frame(width: 400, height: 150, alignment: .center)
                     .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
@@ -129,7 +131,7 @@ struct SignUpView: View {
                 //                                .onTapGesture {
                 //                                    loginScreenViewModel.nextScreen = "SignUpScreenView"
                 //                                }
-                .frame(width: getRelativeWidth(312.0), height: getRelativeHeight(53.0),
+                .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
                        alignment: .center)
                 .background(.teal)
                 .cornerRadius(20)

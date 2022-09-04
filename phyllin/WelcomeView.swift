@@ -94,6 +94,8 @@ struct WelcomeView: View {
         .background(Colours.evergreen)
         .navigate(to: SignUpView(), when: $showSignup)
         .navigate(to: LoginView(), when: $showLogin)
+        .navigationBarHidden(true)
+        .navigationTitle("")
     }
     
 }

@@ -16,12 +16,12 @@ struct TitleView: View {
             Text(title)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
-            
+                .foregroundColor(.white)
             Spacer()
         }
         .padding(.horizontal)
-        .padding(.top, 15)
-        .padding(.bottom, 10)
+//        .padding(.top, 15)
+//        .padding(.bottom, 10)
     }
 }
 

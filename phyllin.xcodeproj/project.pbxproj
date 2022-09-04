@@ -27,6 +27,8 @@
 		201321F828AF5AA80031ED28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201321F728AF5AA80031ED28 /* Preview Assets.xcassets */; };
 		201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321FE28AF5F510031ED28 /* ViewportHelper.swift */; };
 		20335E1728B320060020F549 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20335E1628B320060020F549 /* WelcomeView.swift */; };
+		20A00B0E28C3B141004A0672 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A00B0D28C3B141004A0672 /* SearchView.swift */; };
+		20A00B1228C48BD5004A0672 /* Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A00B1128C48BD5004A0672 /* Placeholders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		201321F728AF5AA80031ED28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		201321FE28AF5F510031ED28 /* ViewportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewportHelper.swift; sourceTree = "<group>"; };
 		20335E1628B320060020F549 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		20A00B0D28C3B141004A0672 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		20A00B1128C48BD5004A0672 /* Placeholders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,11 +137,13 @@
 				1722462C28B8489100D1DF4B /* Data */,
 				1722462928B8478B00D1DF4B /* Product */,
 				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
-				201321F228AF5AA60031ED28 /* LoginView.swift */,
-				1794326B28B31A8100D679DC /* HomeView.swift */,
 				20335E1628B320060020F549 /* WelcomeView.swift */,
-				200B489A28B135650057EA08 /* Navigation.swift */,
+				201321F228AF5AA60031ED28 /* LoginView.swift */,
 				200B489428B126FE0057EA08 /* SignUpView.swift */,
+				1794326B28B31A8100D679DC /* HomeView.swift */,
+				20A00B0D28C3B141004A0672 /* SearchView.swift */,
+				200B489A28B135650057EA08 /* Navigation.swift */,
+				20A00B1128C48BD5004A0672 /* Placeholders.swift */,
 				200B489628B127630057EA08 /* ColourConstants.swift */,
 				201321FE28AF5F510031ED28 /* ViewportHelper.swift */,
 				201321F428AF5AA80031ED28 /* Assets.xcassets */,
@@ -232,7 +238,9 @@
 				1794326C28B31A8100D679DC /* HomeView.swift in Sources */,
 				201321FF28AF5F510031ED28 /* ViewportHelper.swift in Sources */,
 				200B489B28B135650057EA08 /* Navigation.swift in Sources */,
+				20A00B1228C48BD5004A0672 /* Placeholders.swift in Sources */,
 				1722463028B9A7C200D1DF4B /* CodableBundleExtension.swift in Sources */,
+				20A00B0E28C3B141004A0672 /* SearchView.swift in Sources */,
 				1722462B28B847BC00D1DF4B /* ProductItemView.swift in Sources */,
 				1722464528B9B24F00D1DF4B /* Constants.swift in Sources */,
 				20335E1728B320060020F549 /* WelcomeView.swift in Sources */,

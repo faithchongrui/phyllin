@@ -11,7 +11,7 @@ import SwiftUI
 struct phyllinApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            WelcomeView()
                 .environmentObject(Shop())
         }
     }

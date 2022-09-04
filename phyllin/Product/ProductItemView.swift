@@ -10,25 +10,40 @@ import SwiftUI
 struct ProductItemView: View {
     var product: Product
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            ZStack {
-                Image(product.image)
-                    .resizable()
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Colours.evergreen, lineWidth: 5)
+                .background(.white)
+            VStack(alignment: .leading) {
+                VStack(alignment: .center) {
+                    Image(product.image)
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(20)
+                        .padding(.horizontal, 10)
+                        .padding(.top, 10)
+                }
+                    
+                        
+                Text(product.name)
+                    .font(.title3)
+                    .fontWeight(.black)
+                    .padding(.horizontal)
                     .scaledToFit()
-                    .padding(10)
+                    .minimumScaleFactor(0.01)
+                    .foregroundColor(.black)
+                
+                Text("$\(product.price)")
+                    .fontWeight(.semibold)
+                    .foregroundColor(.gray)
+                    .padding(.leading)
+                    .padding(.bottom, 10)
+                    
             }
-            .cornerRadius(20)
             
-            Text(product.name)
-                .font(.title3)
-                .fontWeight(.black)
-            
-            Text("$\(product.price)")
-                .fontWeight(.semibold)
-                .foregroundColor(.gray)
         }
-        
-        
+        .frame(width: 180, height: 200)
+       
         
     }
 }
@@ -37,6 +52,6 @@ struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
         ProductItemView(product: products[0])
             .previewLayout(.fixed(width: 200, height: 300))
-            .padding()
+            
     }
 }

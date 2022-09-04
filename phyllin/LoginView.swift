@@ -41,7 +41,9 @@ struct LoginView: View {
                 ZStack {
                     Form {
                         TextField("username", text: $username)
-                        TextField("password", text: $password)
+                            .textInputAutocapitalization(.never)
+                        SecureField("password", text: $password)
+                            .textInputAutocapitalization(.never)
                     }
 
                     .background(Color.clear)
@@ -60,9 +62,12 @@ struct LoginView: View {
                             .background(LinearGradient(colors: [.blue, .cyan], startPoint: .leading, endPoint: .trailing))
                             .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                             .cornerRadius(20)
-                            .position(x: 350, y: 80)
+                            
+                            
                         
                     }
+                    .frame(width: 40, height: 90, alignment: .trailing)
+                    .position(x: 350, y: 80)
                 }
                 .position(x: 215, y: 120)
             }
@@ -111,7 +116,7 @@ struct LoginView: View {
 
                 }
                 .padding()
-                .frame(width: getRelativeWidth(290.0), height: getRelativeHeight(52.0),
+                .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
                        alignment: .center)
                 .background(.blue)
                 .cornerRadius(20)
@@ -134,7 +139,7 @@ struct LoginView: View {
                             .scaleEffect(1.6)
                     }
                 }
-                .frame(width: getRelativeWidth(280), height: getRelativeHeight(53.0),
+                .frame(width: getRelativeWidth(316), height: getRelativeHeight(52.0),
                        alignment: .center)
                 .background(.teal)
                 .cornerRadius(20)
