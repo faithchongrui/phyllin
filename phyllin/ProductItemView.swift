@@ -12,7 +12,7 @@ struct ProductItemView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .stroke(Colours.evergreen, lineWidth: 5)
+                .stroke(Colours.evergreen, lineWidth: 10)
                 .background(.white)
             VStack(alignment: .leading) {
                 VStack(alignment: .center) {
