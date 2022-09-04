@@ -24,25 +24,34 @@ struct HomeView: View {
         TabView {
             VStack {
                 VStack {
-                    TitleView(title: "products")
+                    ZStack {
+                        TitleView(title: "products")
+                        VStack(alignment: .trailing) {
+                            Image(systemName: "cart.fill")
+                        }
+                            
+                    }
                     SearchView(text: $searchText)
                     
+                    
                 }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
                 .background(Colours.tealgreen)
+                
                 ScrollView(.vertical) {
-                                ProductGridView(product: products[0])
+                    ProductGridView(product: products[0])
                         .frame(width: 390, height: .infinity)
-                                    
-                        }
+                        
+                }
                 
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
             .background(.gray)
             .tabItem {
                 Image(systemName: "house.fill")
                 Text("Home")
             }
+            
             Text("Events")
                 .tabItem {
                     Image(systemName: "calendar")
@@ -64,12 +73,13 @@ struct HomeView: View {
         .navigationBarHidden(true)
         .ignoresSafeArea()
         .background(.black)
-        
-    }
-    
-    struct HomeView_Previews: PreviewProvider {
-        static var previews: some View {
-        HomeView()
+            
+//
+//        struct HomeView_Previews: PreviewProvider {
+//            static var previews: some View {
+//                HomeView()
+//            }
+//        }
     }
 }
-}
+

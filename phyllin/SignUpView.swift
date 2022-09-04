@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignUpView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear
     }
-    @State var username = ""
+    @State var email = ""
     @State var password = ""
     
     @State private var showHome = false
@@ -29,12 +30,8 @@ struct SignUpView: View {
                     Image("logo")
                 }
                 .position(x: 220)
-                
-                
-                //                                Image("myImage")
-                //                                        .clipShape(Circle())
-                //                                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                Text("sign up")
+
+                Text("Sign Up")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -43,10 +40,11 @@ struct SignUpView: View {
                 
                 ZStack {
                     Form {
-                        TextField("username", text: $username)
+                        TextField("email", text: $email)
                             .textInputAutocapitalization(.never)
                         SecureField("password", text: $password)
                             .textInputAutocapitalization(.never)
+
                     }
                     .background(Color.clear)
                     .frame(width: 400, height: 150, alignment: .center)
@@ -57,6 +55,7 @@ struct SignUpView: View {
             .padding(.bottom, 602.0)
             .position(x: 215, y: 650)
             VStack(alignment: .center) {
+                
                 
                 Text("or")
                     .font(.system(size: 30))
@@ -112,8 +111,8 @@ struct SignUpView: View {
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                 
                 Button {
-                    print("mg hi")
-                    showHome = true
+                    register()
+//                    showHome = true
                 } label: {
                     HStack {
                         Text("create account")
@@ -128,9 +127,7 @@ struct SignUpView: View {
                             .scaleEffect(1.6)
                     }
                 }
-                //                                .onTapGesture {
-                //                                    loginScreenViewModel.nextScreen = "SignUpScreenView"
-                //                                }
+
                 .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
                        alignment: .center)
                 .background(.teal)
@@ -138,9 +135,6 @@ struct SignUpView: View {
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
             }
             .position(x: 190, y: 950)
-            //                        }
-            //                        .hideNavigationBar()
-            
             .position(x: 205, y: 190)
             .padding()
         }
@@ -148,20 +142,15 @@ struct SignUpView: View {
         .background(LinearGradient(gradient: Gradient(colors: [Colours.tealgreen, Colours.cyanblue]),
                                    startPoint: .topLeading, endPoint: .bottomTrailing))
         .navigate(to: HomeView(), when: $showHome)
-        //                    Group {
-        //                        NavigationLink(destination: HomeScreenView(),
-        //                                       tag: "HomeScreenView",
-        //                                       selection: $loginScreenViewModel.nextScreen,
-        //                                       label: {
-        //                            EmptyView()
-        //                        })
-        //                        NavigationLink(destination: SignUpScreenView(),
-        //                                       tag: "SignUpScreenView",
-        //                                       selection: $loginScreenViewModel.nextScreen,
-        //                                       label: {
-        //                            EmptyView()
-        //                        })
-        //                    }
+    }
+    
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+        }
     }
     
 }

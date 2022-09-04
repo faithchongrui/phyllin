@@ -6,41 +6,41 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear
     }
-    @State var username = ""
+    @State var email = ""
     @State var password = ""
+    @State var userLoggedIn = false
     
     @State private var showSignup = false
     @State private var showHome = false
     
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+        }
+    }
+    
     var body: some View {
-
-        ZStack {
-            Image("bgvector")
-            VStack(alignment: .center) {
-                ZStack {
-                    Circle()
-                        .frame(width: 200, height: 300)
-                        .foregroundColor(Colours.evergreen)
-                        .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
-                    Image("logo")
-                }
-                .position(x: 220)
-                
-                Text("login")
-                    .font(.system(size: 60))
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .minimumScaleFactor(0.5)
-                    .position(x: 220, y: 50)
-                
+        if userLoggedIn {
+            HomeView()
+        }
+        else {
+            content
+        }
+    }
+    
+    var content: some View {
                 ZStack {
                     Form {
-                        TextField("username", text: $username)
+                        TextField("email", text: $email)
                             .textInputAutocapitalization(.never)
                         SecureField("password", text: $password)
                             .textInputAutocapitalization(.never)
@@ -55,15 +55,36 @@ struct LoginView: View {
                         showHome = true
                     } label: {
                         Image(systemName: "checkmark")
-                            .foregroundColor(.white)
-                            .padding()
-                            .scaleEffect(1.6)
                         
-                            .background(LinearGradient(colors: [.blue, .cyan], startPoint: .leading, endPoint: .trailing))
+                    Image("bgvector")
+                    VStack(alignment: .center) {
+                        ZStack {
+                            Circle()
+                                .frame(width: 200, height: 300)
+                                .foregroundColor(Colours.evergreen)
+                                .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
+                            Image("logo")
+                        }
+                        .position(x: 220)
+
+                        Text("login")
+                            .font(.system(size: 60))
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .minimumScaleFactor(0.5)
+                            .position(x: 220, y: 50)
+                        
+                        ZStack {
+                            Form {
+                                TextField("username", text: $email)
+                                SecureField("password", text: $password)
+                            }
+
+                            .background(Color.clear)
+                            .frame(width: 400, height: 150, alignment: .center)
                             .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
+
                             .cornerRadius(20)
-                            
-                            
                         
                     }
                     .frame(width: 40, height: 90, alignment: .trailing)
@@ -85,34 +106,79 @@ struct LoginView: View {
                 } label: {
                     HStack {
                         Image("ggl")
-                        
-                        Text("sign in with google")
-                            .font(.system(size: 40))
-                            .fontWeight(.semibold)
-                            .foregroundColor(.gray)
-                            .minimumScaleFactor(0.5)
+                            
+                            Button {
+                                login()
+                                print("omg hi")
+                                showHome = true
+                            } label: {
+                                Image(systemName: "checkmark")
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .scaleEffect(1.6)
+                                
+                                    .background(LinearGradient(colors: [.blue, .cyan], startPoint: .leading, endPoint: .trailing))
+                                    .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
+                                    .cornerRadius(20)
+                                    .position(x: 350, y: 80)
+                                
+                            }
+                        }
+                        .position(x: 215, y: 120)
+                        .onAppear {
+                            Auth.auth().addStateDidChangeListener { auth, user in
+                                if user != nil {
+                                    userLoggedIn.toggle()
+                                }
+                                
+                            }
+                        }
                     }
-                }
-                .padding()
-                .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
-                       alignment: .center)
-                .background(.white)
-                .cornerRadius(20)
-                .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
-                
-                Button {
-                    print("omg no")
-                } label: {
-                    HStack {
-                        Image("fb")
+                    .padding(.bottom, 602.0)
+                    .position(x: 215, y: 650)
+                    VStack(alignment: .center) {
+                        
+                        Text("or")
+                            .font(.system(size: 30))
+                            .fontWeight(.medium)
                             .foregroundColor(.white)
                         
-                        Text("sign in with facebook")
-                            .font(.system(size: 40))
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .minimumScaleFactor(0.5)
-                    }
+                        Button {
+                            print("omg hi")
+                        } label: {
+                            HStack {
+                                Image("ggl")
+                                
+                                Text("sign in with google")
+                                    .font(.system(size: 40))
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.gray)
+                                    .minimumScaleFactor(0.5)
+                            }
+                        }
+                        //                                    .hideNavigationBar()
+                        //                                    .onTapGesture {         loginScreenViewModel.googleSignIn()
+                        //                                    }
+                        .padding()
+                        .frame(width: getRelativeWidth(316.0), height: getRelativeHeight(52.0),
+                               alignment: .center)
+                        .background(.white)
+                        .cornerRadius(20)
+                        .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
+                        
+                        Button {
+                            print("omg no")
+                        } label: {
+                            HStack {
+                                Image("fb")
+                                    .foregroundColor(.white)
+                                
+                                Text("sign in with facebook")
+                                    .font(.system(size: 40))
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .minimumScaleFactor(0.5)
+                            }
 
                 }
                 .padding()
@@ -133,37 +199,71 @@ struct LoginView: View {
                             .foregroundColor(.white)
                             .minimumScaleFactor(0.5)
                             .padding()
+                        }
+                        //                                    .hideNavigationBar()
+                        //                                    .onTapGesture {         loginScreenViewModel.facebookSignIn()
+                        //                                    }
+                        .padding()
+                        .frame(width: getRelativeWidth(290.0), height: getRelativeHeight(52.0),
+                               alignment: .center)
+                        .background(.blue)
+                        .cornerRadius(20)
+                        .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                         
-                        Image(systemName: "arrow.right")
-                            .foregroundColor(.white)
-                            .scaleEffect(1.6)
+                        Button {
+                            print("mg hi")
+                           showSignup = true
+                        } label: {
+                            HStack {
+                                Text("sign up")
+                                    .font(.system(size: 40))
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .minimumScaleFactor(0.5)
+                                    .padding()
+                                
+                                Image(systemName: "arrow.right")
+                                    .foregroundColor(.white)
+                                    .scaleEffect(1.6)
+                            }
+                        }
+                        
+                        .frame(width: getRelativeWidth(280), height: getRelativeHeight(53.0),
+                               alignment: .center)
+                        .background(.teal)
+                        .cornerRadius(20)
+                        .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                     }
+                    .position(x: 190, y: 950)
+                    .position(x: 205, y: 190)
+                    .padding()
                 }
                 .frame(width: getRelativeWidth(316), height: getRelativeHeight(52.0),
                        alignment: .center)
                 .background(.teal)
                 .cornerRadius(20)
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
-            }
-            .position(x: 190, y: 950)
-            .position(x: 205, y: 190)
-            .padding()
-        }
+                
+                .background(LinearGradient(gradient: Gradient(colors: [Colours.tealgreen, Colours.cyanblue]),
+                                           startPoint: .topLeading, endPoint: .bottomTrailing))
+                .navigate(to: SignUpView(), when: $showSignup)
+                .navigate(to: HomeView(), when: $showHome)
+    }
         
-        .background(LinearGradient(gradient: Gradient(colors: [Colours.tealgreen, Colours.cyanblue]),
-                                   startPoint: .topLeading, endPoint: .bottomTrailing))
-        .navigate(to: SignUpView(), when: $showSignup)
-        .navigate(to: HomeView(), when: $showHome)
-    }
+    
+    
 }
 
 
+//
+//struct LoginView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginView()
+//    }
+//}
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+
+
     }
 }
-
-
 
