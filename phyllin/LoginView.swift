@@ -20,15 +20,6 @@ struct LoginView: View {
     @State private var showSignup = false
     @State private var showHome = false
     
-    func login() {
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if error != nil {
-                print(error!.localizedDescription)
-            }
-            
-        }
-    }
-    
     var body: some View {
         if userLoggedIn {
             HomeView()

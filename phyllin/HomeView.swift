@@ -11,6 +11,7 @@ struct HomeView: View {
     
     @State var SearchQuery = ""
     @State private var searchText = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     
     @State private var showCart = false
     
@@ -23,6 +24,28 @@ struct HomeView: View {
         }
     
     var body: some View {
+        Group {
+            if viewModel.user != nil {
+                mainInterfaceView
+            }
+            else {
+                SignUpView()
+            }
+        } .onAppear {
+            viewModel.listenToAuthState()
+        }
+    }
+}
+
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
+}
+
+extension HomeView {
+    var mainInterfaceView: some View {
         TabView {
             VStack {
                 VStack {
@@ -84,12 +107,8 @@ struct HomeView: View {
         .ignoresSafeArea()
         .background(.black)
             
-//
-//        struct HomeView_Previews: PreviewProvider {
-//            static var previews: some View {
-//                HomeView()
-//            }
-//        }
+
     }
+    
 }
 

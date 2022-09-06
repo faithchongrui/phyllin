@@ -19,11 +19,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct phyllinApp: App {
+    @StateObject var viewModel = AuthViewModel()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            HomeView()
                 .environmentObject(Shop())
+                .environmentObject(viewModel)
         }
     }
 }
