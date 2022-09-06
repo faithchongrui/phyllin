@@ -181,7 +181,14 @@ struct LoginView: View {
         .navigate(to: SignUpView(), when: $showSignup)
         .navigate(to: HomeView(), when: $showHome)
     }
-    
+    func login() {
+            Auth.auth().signIn(withEmail: email, password: password) { result, error in
+                if error != nil {
+                    print(error!.localizedDescription)
+                }
+                
+            }
+        }
 }
 //struct LoginView_Previews: PreviewProvider {
 //    static var previews: some View {
