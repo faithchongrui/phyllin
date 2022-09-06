@@ -100,18 +100,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1722464328B9B23400D1DF4B /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				201321FE28AF5F510031ED28 /* ViewportHelper.swift */,
-				200B489A28B135650057EA08 /* Navigation.swift */,
-				1722464428B9B24F00D1DF4B /* Constants.swift */,
-				17BCC97A28C1F18C00ACCB1E /* Shop.swift */,
-				200B489628B127630057EA08 /* ColourConstants.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		201321E428AF5AA60031ED28 = {
 			isa = PBXGroup;
 			children = (
@@ -135,14 +123,12 @@
 				201F6D3528C4C96000611788 /* Utilities */,
 				1722463D28B9B15F00D1DF4B /* Models */,
 				1722462C28B8489100D1DF4B /* Data */,
-				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
 				20335E1628B320060020F549 /* WelcomeView.swift */,
 				201321F228AF5AA60031ED28 /* LoginView.swift */,
 				200B489428B126FE0057EA08 /* SignUpView.swift */,
 				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
 				1794326B28B31A8100D679DC /* HomeView.swift */,
 				20A00B0D28C3B141004A0672 /* SearchView.swift */,
-				20A00B1128C48BD5004A0672 /* Placeholders.swift */,
 				1722462A28B847BC00D1DF4B /* ProductItemView.swift */,
 				17BCC97628C1EED700ACCB1E /* ProductGridView.swift */,
 				17BCC97828C1EF9200ACCB1E /* TitleView.swift */,
@@ -169,6 +155,7 @@
 				201F6D3A28C4CACF00611788 /* Navigation.swift */,
 				1722464428B9B24F00D1DF4B /* Constants.swift */,
 				17BCC97A28C1F18C00ACCB1E /* Shop.swift */,
+				20A00B1128C48BD5004A0672 /* Placeholders.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";

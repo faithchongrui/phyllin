@@ -12,6 +12,8 @@ struct HomeView: View {
     @State var SearchQuery = ""
     @State private var searchText = ""
     
+    @State private var showCart = false
+    
     init() {
 //        UITabBar.appearance().barTintColor = UIColor(named: "lighterbg")
         UITabBar.appearance().isTranslucent = false
@@ -26,12 +28,16 @@ struct HomeView: View {
                 VStack {
                     ZStack {
                         TitleView(title: "products")
-                        VStack(alignment: .trailing) {
+                        Button {
+                            showCart = true
+                        } label: {
                             Image(systemName: "cart.fill")
+                                .padding(.leading, 300)
+                                .font(.system(size: 50))
                         }
-                            
+//                        .navigate(to: CartView(), when: $showCart)
                     }
-                    SearchView(text: $searchText)
+                    SearchView(text: searchText)
                     
                     
                 }
@@ -39,12 +45,16 @@ struct HomeView: View {
                 .navigationBarHidden(true)
                 .background(Colours.tealgreen)
                 
-                ScrollView(.vertical) {
-                    ProductGridView(product: products[0])
-                        .frame(width: 390, height: .infinity)
-                        
+                NavigationView {
+                    ScrollView(.vertical) {
+                        ProductGridView(text: $searchText, product: products[0])
+                            .frame(width: 390, height: .infinity)
+                            
+                    }
                 }
-                
+                .searchable(text: $searchText)
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
             }
             .background(.gray)
             .tabItem {
