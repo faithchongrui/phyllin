@@ -20,6 +20,8 @@ struct LoginView: View {
     @State private var showSignup = false
     @State private var showHome = false
     
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
         if userLoggedIn {
             HomeView()
@@ -62,7 +64,7 @@ struct LoginView: View {
                     .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                     
                     Button {
-                        login()
+                        viewModel.login(withEmail: email, password: password)
                         print("omg hi")
                         showHome = true
                     } label: {
@@ -103,14 +105,6 @@ struct LoginView: View {
                             .minimumScaleFactor(0.5)
                     }
                 }
-                .onAppear {
-                    Auth.auth().addStateDidChangeListener { auth, user in
-                        if user != nil {
-                            userLoggedIn.toggle()
-                        }
-                        
-                    }
-                }
                 //                                    .hideNavigationBar()
                 //                                    .onTapGesture {         loginScreenViewModel.googleSignIn()
                 //                                    }
@@ -134,6 +128,9 @@ struct LoginView: View {
                             .foregroundColor(.white)
                             .minimumScaleFactor(0.5)
                     }
+                    .position(x: 190, y: 950)
+                    //                        }
+                    //                        .hideNavigationBar()
                     
                 }
                 //                                    .hideNavigationBar()
@@ -181,18 +178,10 @@ struct LoginView: View {
         .navigate(to: SignUpView(), when: $showSignup)
         .navigate(to: HomeView(), when: $showHome)
     }
-    func login() {
-            Auth.auth().signIn(withEmail: email, password: password) { result, error in
-                if error != nil {
-                    print(error!.localizedDescription)
-                }
-                
-            }
-        }
 }
-//struct LoginView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LoginView()
-//    }
-//}
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+    }
+}
 

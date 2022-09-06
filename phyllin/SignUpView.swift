@@ -12,8 +12,11 @@ struct SignUpView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear
     }
+    @EnvironmentObject var viewModel: AuthViewModel
     @State var email = ""
     @State var password = ""
+    @State var username = ""
+    @State var fullname = ""
     
     @State private var showHome = false
     @State private var isEditing = false
@@ -40,6 +43,8 @@ struct SignUpView: View {
                 
                 ZStack {
                     Form {
+                        TextField("username", text: $username)
+                        TextField("full name", text: $fullname)
                         TextField("email", text: $email)
                             .textInputAutocapitalization(.never)
                         SecureField("password", text: $password)
@@ -47,10 +52,10 @@ struct SignUpView: View {
 
                     }
                     .background(Color.clear)
-                    .frame(width: 400, height: 150, alignment: .center)
+                    .frame(width: 400, height: 220, alignment: .center)
                     .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                 }
-                .position(x: 215, y: 120)
+                .position(x: 215, y: 70)
             }
             .padding(.bottom, 602.0)
             .position(x: 215, y: 650)
@@ -111,7 +116,7 @@ struct SignUpView: View {
                 .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                 
                 Button {
-                    register()
+                    viewModel.register(withEmail: email, password: password, username: username, fullname: fullname)
 //                    showHome = true
                 } label: {
                     HStack {
@@ -144,14 +149,7 @@ struct SignUpView: View {
         .navigate(to: HomeView(), when: $showHome)
     }
     
-    func register() {
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if error != nil {
-                print(error!.localizedDescription)
-            }
-            
-        }
-    }
+    
     
 }
 

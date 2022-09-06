@@ -23,9 +23,10 @@ struct phyllinApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            HomeView()
                 .environmentObject(Shop())
                 .environmentObject(viewModel)
         }
+        
     }
 }

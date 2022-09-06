@@ -25,14 +25,12 @@ struct HomeView: View {
     
     var body: some View {
         Group {
-            if viewModel.user != nil {
+            if viewModel.userSession != nil {
                 mainInterfaceView
             }
             else {
                 SignUpView()
             }
-        } .onAppear {
-            viewModel.listenToAuthState()
         }
     }
 }
