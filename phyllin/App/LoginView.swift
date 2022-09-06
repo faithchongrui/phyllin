@@ -62,7 +62,9 @@ struct LoginView: View {
                         ZStack {
                             Form {
                                 TextField("username", text: $email)
+                                    .textInputAutocapitalization(.never)
                                 SecureField("password", text: $password)
+                                    .textInputAutocapitalization(.never)
                             }
 
                             .background(Color.clear)

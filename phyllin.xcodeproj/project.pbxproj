@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		171F5A7F28C2F59900FFE225 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F5A7E28C2F59900FFE225 /* NavigationBarView.swift */; };
 		1722462B28B847BC00D1DF4B /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722462A28B847BC00D1DF4B /* ProductItemView.swift */; };
 		1722463028B9A7C200D1DF4B /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722462F28B9A7C200D1DF4B /* CodableBundleExtension.swift */; };
 		1722463428B9A8CC00D1DF4B /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 1722463328B9A8CC00D1DF4B /* products.json */; };
@@ -35,7 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		171F5A7E28C2F59900FFE225 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		1722462A28B847BC00D1DF4B /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 		1722462F28B9A7C200D1DF4B /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		1722463328B9A8CC00D1DF4B /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
@@ -74,14 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		171F5A7D28C2F4CB00FFE225 /* TabView */ = {
-			isa = PBXGroup;
-			children = (
-				171F5A7E28C2F59900FFE225 /* NavigationBarView.swift */,
-			);
-			path = TabView;
-			sourceTree = "<group>";
-		};
 		1722462928B8478B00D1DF4B /* Product */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +152,6 @@
 		201321EF28AF5AA60031ED28 /* phyllin */ = {
 			isa = PBXGroup;
 			children = (
-				171F5A7D28C2F4CB00FFE225 /* TabView */,
 				20335E1628B320060020F549 /* WelcomeView.swift */,
 				1722464328B9B23400D1DF4B /* Utilities */,
 				1722463D28B9B15F00D1DF4B /* Models */,
@@ -276,7 +265,6 @@
 				20335E1728B320060020F549 /* WelcomeView.swift in Sources */,
 				1722463F28B9B19A00D1DF4B /* ProductModel.swift in Sources */,
 				200B489728B127630057EA08 /* ColourConstants.swift in Sources */,
-				171F5A7F28C2F59900FFE225 /* NavigationBarView.swift in Sources */,
 				201321F328AF5AA60031ED28 /* LoginView.swift in Sources */,
 				17BCC97728C1EED700ACCB1E /* ProductGridView.swift in Sources */,
 				201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */,
