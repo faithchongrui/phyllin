@@ -14,14 +14,14 @@
 		1722464128B9B1FC00D1DF4B /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722464028B9B1FC00D1DF4B /* CategoryModel.swift */; };
 		1722464528B9B24F00D1DF4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722464428B9B24F00D1DF4B /* Constants.swift */; };
 		1788CB7628C6D36300D21A2A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788CB7528C6D36300D21A2A /* AuthViewModel.swift */; };
+		1788CB7928C6DD4000D21A2A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1788CB7828C6DD4000D21A2A /* FirebaseAuth */; };
+		1788CB7B28C6DD4000D21A2A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1788CB7A28C6DD4000D21A2A /* FirebaseFirestore */; };
 		1794326C28B31A8100D679DC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794326B28B31A8100D679DC /* HomeView.swift */; };
 		17BCC97528C02B2800ACCB1E /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 17BCC97428C02B2800ACCB1E /* categories.json */; };
 		17BCC97728C1EED700ACCB1E /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCC97628C1EED700ACCB1E /* ProductGridView.swift */; };
 		17BCC97928C1EF9200ACCB1E /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCC97828C1EF9200ACCB1E /* TitleView.swift */; };
 		17BCC97B28C1F18C00ACCB1E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCC97A28C1F18C00ACCB1E /* Shop.swift */; };
 		17BCC97E28C244D800ACCB1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17BCC97D28C244D800ACCB1E /* GoogleService-Info.plist */; };
-		17BCC98128C2457600ACCB1E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17BCC98028C2457600ACCB1E /* FirebaseAuth */; };
-		17BCC98328C2457600ACCB1E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 17BCC98228C2457600ACCB1E /* FirebaseFirestore */; };
 		200B489528B126FE0057EA08 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B489428B126FE0057EA08 /* SignUpView.swift */; };
 		201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321F028AF5AA60031ED28 /* phyllinApp.swift */; };
 		201321F328AF5AA60031ED28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201321F228AF5AA60031ED28 /* LoginView.swift */; };
@@ -70,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17BCC98128C2457600ACCB1E /* FirebaseAuth in Frameworks */,
-				17BCC98328C2457600ACCB1E /* FirebaseFirestore in Frameworks */,
+				1788CB7928C6DD4000D21A2A /* FirebaseAuth in Frameworks */,
+				1788CB7B28C6DD4000D21A2A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +183,8 @@
 			);
 			name = phyllin;
 			packageProductDependencies = (
-				17BCC98028C2457600ACCB1E /* FirebaseAuth */,
-				17BCC98228C2457600ACCB1E /* FirebaseFirestore */,
+				1788CB7828C6DD4000D21A2A /* FirebaseAuth */,
+				1788CB7A28C6DD4000D21A2A /* FirebaseFirestore */,
 			);
 			productName = phyllin;
 			productReference = 201321ED28AF5AA60031ED28 /* phyllin.app */;
@@ -215,7 +215,7 @@
 			);
 			mainGroup = 201321E428AF5AA60031ED28;
 			packageReferences = (
-				17BCC97F28C2457600ACCB1E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1788CB7728C6DD4000D21A2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 201321EE28AF5AA60031ED28 /* Products */;
 			projectDirPath = "";
@@ -468,7 +468,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		17BCC97F28C2457600ACCB1E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		1788CB7728C6DD4000D21A2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -479,14 +479,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		17BCC98028C2457600ACCB1E /* FirebaseAuth */ = {
+		1788CB7828C6DD4000D21A2A /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 17BCC97F28C2457600ACCB1E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1788CB7728C6DD4000D21A2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		17BCC98228C2457600ACCB1E /* FirebaseFirestore */ = {
+		1788CB7A28C6DD4000D21A2A /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 17BCC97F28C2457600ACCB1E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1788CB7728C6DD4000D21A2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
