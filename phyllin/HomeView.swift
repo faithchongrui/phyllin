@@ -92,7 +92,7 @@ extension HomeView {
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
 
-            Text("Profile")
+            ProfilePageView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("Profile")

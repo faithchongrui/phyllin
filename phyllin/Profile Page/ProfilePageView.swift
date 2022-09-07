@@ -39,6 +39,9 @@ struct ProfilePageView: View {
             Text("History")
                 .font(.system(size: getRelativeFontSize(30)))
                 .fontWeight(.semibold)
+            ScrollView {
+                HistoryEntryItem()
+            }
             
         }
         .frame(width: getRelativeWidth(384), height: getRelativeHeight(522), alignment: .center)
