@@ -31,6 +31,7 @@
 		201F6D3928C4CAC900611788 /* ViewportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F6D3828C4CAC900611788 /* ViewportHelper.swift */; };
 		201F6D3B28C4CACF00611788 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F6D3A28C4CACF00611788 /* Navigation.swift */; };
 		20335E1728B320060020F549 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20335E1628B320060020F549 /* WelcomeView.swift */; };
+		209EF36B28C848E00011A5F3 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EF36A28C848E00011A5F3 /* CartView.swift */; };
 		20A00B0E28C3B141004A0672 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A00B0D28C3B141004A0672 /* SearchView.swift */; };
 		20A00B1228C48BD5004A0672 /* Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A00B1128C48BD5004A0672 /* Placeholders.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		201F6D3828C4CAC900611788 /* ViewportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewportHelper.swift; sourceTree = "<group>"; };
 		201F6D3A28C4CACF00611788 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		20335E1628B320060020F549 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		209EF36A28C848E00011A5F3 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		20A00B0D28C3B141004A0672 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		20A00B1128C48BD5004A0672 /* Placeholders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,11 +129,12 @@
 				1722463D28B9B15F00D1DF4B /* Models */,
 				1722462C28B8489100D1DF4B /* Data */,
 				20335E1628B320060020F549 /* WelcomeView.swift */,
+				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
 				201321F228AF5AA60031ED28 /* LoginView.swift */,
 				200B489428B126FE0057EA08 /* SignUpView.swift */,
-				201321F028AF5AA60031ED28 /* phyllinApp.swift */,
 				1794326B28B31A8100D679DC /* HomeView.swift */,
 				20A00B0D28C3B141004A0672 /* SearchView.swift */,
+				209EF36A28C848E00011A5F3 /* CartView.swift */,
 				1722462A28B847BC00D1DF4B /* ProductItemView.swift */,
 				17BCC97628C1EED700ACCB1E /* ProductGridView.swift */,
 				17BCC97828C1EF9200ACCB1E /* TitleView.swift */,
@@ -253,6 +256,7 @@
 				1722463028B9A7C200D1DF4B /* CodableBundleExtension.swift in Sources */,
 				201F6D3B28C4CACF00611788 /* Navigation.swift in Sources */,
 				20A00B0E28C3B141004A0672 /* SearchView.swift in Sources */,
+				209EF36B28C848E00011A5F3 /* CartView.swift in Sources */,
 				1722462B28B847BC00D1DF4B /* ProductItemView.swift in Sources */,
 				1722464528B9B24F00D1DF4B /* Constants.swift in Sources */,
 				20335E1728B320060020F549 /* WelcomeView.swift in Sources */,

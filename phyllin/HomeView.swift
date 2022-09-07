@@ -50,15 +50,17 @@ extension HomeView {
             VStack {
                 VStack {
                     ZStack {
-                        TitleView(title: "products")
                         Button {
                             showCart = true
                         } label: {
                             Image(systemName: "cart.fill")
                                 .padding(.leading, 300)
                                 .font(.system(size: 50))
+                                .foregroundColor(.white)
                         }
-//                        .navigate(to: CartView(), when: $showCart)
+                        TitleView(title: "products")
+                        
+                       
                     }
                     SearchView(text: searchText)
                     
@@ -66,7 +68,7 @@ extension HomeView {
                 }
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
-                .background(Colours.tealgreen)
+                .background(Colours.evergreen)
                 
                 NavigationView {
                     ScrollView(.vertical) {
@@ -101,14 +103,15 @@ extension HomeView {
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
         }
-        .accentColor(Colours.tealgreen)
+        .accentColor(Colours.evergreen)
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .ignoresSafeArea()
         .background(.black)
-            
+        .navigate(to: CartView(), when: $showCart)
 
     }
+        
     
 }
 
