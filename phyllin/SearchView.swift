@@ -16,7 +16,7 @@ struct SearchView: View {
             TextField("", text: $text)
                 .textInputAutocapitalization(.never)
                 .placeholder(when: text.isEmpty, placeholder: {
-                    Text("search here").foregroundColor(Colours.tealgreen)
+                    Text("search here").foregroundColor(Colours.evergreen)
                 })
                 
                 .padding(.horizontal, 40)
@@ -28,7 +28,7 @@ struct SearchView: View {
                 .overlay(
                     HStack {
                         Image(systemName: "magnifyingglass")
-                            .foregroundColor(Colours.tealgreen)
+                            .foregroundColor(Colours.evergreen)
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 10)
                         if isEditing {
@@ -36,7 +36,7 @@ struct SearchView: View {
                                 self.text = ""
                             } label: {
                                 Image(systemName: "multiply.circle.fill")
-                                    .foregroundColor(Colours.tealgreen)
+                                    .foregroundColor(Colours.evergreen)
                                     .padding(.trailing, 8)
                             }
                         }
