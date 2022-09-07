@@ -19,6 +19,7 @@ struct SignUpView: View {
     @State var fullname = ""
     
     @State private var showHome = false
+    @State private var showLogin = false
     @State private var isEditing = false
     
     var body: some View {
@@ -60,6 +61,11 @@ struct SignUpView: View {
             .padding(.bottom, 602.0)
             .position(x: 215, y: 650)
             VStack(alignment: .center) {
+                Button {
+                    showLogin = true
+                } label: {
+                    Text("Already have an account?")
+                }
                 
                 
                 Text("or")
@@ -147,6 +153,7 @@ struct SignUpView: View {
         .background(LinearGradient(gradient: Gradient(colors: [Colours.tealgreen, Colours.cyanblue]),
                                    startPoint: .topLeading, endPoint: .bottomTrailing))
         .navigate(to: HomeView(), when: $showHome)
+        .navigate(to: LoginView(), when: $showLogin)
     }
     
     
