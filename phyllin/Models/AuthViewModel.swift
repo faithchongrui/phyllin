@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
 
 final class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
@@ -44,11 +45,26 @@ final class AuthViewModel: ObservableObject {
                 "fullname": fullname,
                 "uid": user.uid
             ]
+            
+            let freshSlate =
+            [
+                "cartCheckOut":
+                    [
+                        
+                    ]
+            ]
             Firestore.firestore().collection("users")
                 .document(user.uid)
                 .setData(data) { _ in
                     print("DEBUG: Did upload user data")
                 }
+            
+            Firestore.firestore().collection("purchases")
+                .document(user.uid)
+                .setData(freshSlate) { _ in
+                    print("DEBUG: Did upload user data (2)")
+                }
+            
             
         }
     }
