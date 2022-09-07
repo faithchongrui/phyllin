@@ -15,9 +15,8 @@ struct ProfilePageView: View {
         VStack {
             Text("\(username)")
                 .fontWeight(.semibold)
-                .font(.system(size: getRelativeFontSize(16)))
+                .font(.system(size: getRelativeFontSize(30)))
                 .foregroundColor(Color.white)
-                .frame(width: getRelativeWidth(120), height: getRelativeHeight(16))
                 .padding()
                 
             
@@ -29,13 +28,17 @@ struct ProfilePageView: View {
             .frame(width: getRelativeWidth(301), height: getRelativeHeight(99), alignment: .center)
             .background(Color.grey)
             .cornerRadius(32)
+            .padding()
         }
         .frame(width: getRelativeWidth(331), height: getRelativeHeight(195), alignment: .center)
         .background(Colours.evergreen)
         .cornerRadius(32)
         Spacer()
             .frame(height: 50)
-        VStack {
+        VStack(alignment: .center) {
+            Text("History")
+                .font(.system(size: getRelativeFontSize(30)))
+                .fontWeight(.semibold)
             
         }
         .frame(width: getRelativeWidth(384), height: getRelativeHeight(522), alignment: .center)

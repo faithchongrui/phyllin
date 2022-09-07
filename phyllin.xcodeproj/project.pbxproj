@@ -13,6 +13,7 @@
 		1722463F28B9B19A00D1DF4B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722463E28B9B19A00D1DF4B /* ProductModel.swift */; };
 		1722464128B9B1FC00D1DF4B /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722464028B9B1FC00D1DF4B /* CategoryModel.swift */; };
 		1722464528B9B24F00D1DF4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722464428B9B24F00D1DF4B /* Constants.swift */; };
+		17236AEC28C84E7D00FF08B9 /* HistoryEntryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17236AEB28C84E7D00FF08B9 /* HistoryEntryItem.swift */; };
 		1788CB7628C6D36300D21A2A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788CB7528C6D36300D21A2A /* AuthViewModel.swift */; };
 		1788CB7928C6DD4000D21A2A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1788CB7828C6DD4000D21A2A /* FirebaseAuth */; };
 		1788CB7B28C6DD4000D21A2A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1788CB7A28C6DD4000D21A2A /* FirebaseFirestore */; };
@@ -44,6 +45,7 @@
 		1722463E28B9B19A00D1DF4B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		1722464028B9B1FC00D1DF4B /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		1722464428B9B24F00D1DF4B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		17236AEB28C84E7D00FF08B9 /* HistoryEntryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntryItem.swift; sourceTree = "<group>"; };
 		1788CB7528C6D36300D21A2A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		1788CBA428C842F900D21A2A /* ProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageView.swift; sourceTree = "<group>"; };
 		1794326B28B31A8100D679DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				1788CBA428C842F900D21A2A /* ProfilePageView.swift */,
+				17236AEB28C84E7D00FF08B9 /* HistoryEntryItem.swift */,
 			);
 			path = "Profile Page";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				201321F128AF5AA60031ED28 /* phyllinApp.swift in Sources */,
 				17BCC97928C1EF9200ACCB1E /* TitleView.swift in Sources */,
 				17BCC97B28C1F18C00ACCB1E /* Shop.swift in Sources */,
+				17236AEC28C84E7D00FF08B9 /* HistoryEntryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

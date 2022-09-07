@@ -15,4 +15,5 @@ struct Colours {
 }
 extension Color {
     static let grey = Color(red: 217, green: 217, blue: 217)
+    static let greyish = Color(red: 240, green: 240, blue: 240)
 }
