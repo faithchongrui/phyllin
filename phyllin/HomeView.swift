@@ -71,7 +71,6 @@ extension HomeView {
                 NavigationView {
                     ScrollView(.vertical) {
                         ProductGridView(text: $searchText, product: products[0])
-                            .frame(width: 390, height: .infinity)
                             
                     }
                 }

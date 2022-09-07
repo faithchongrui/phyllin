@@ -13,3 +13,6 @@ struct Colours {
     static let cyanblue: Color = .init("cyanblue")
     static let evergreen: Color = .init("evergreen")
 }
+extension Color {
+    static let grey = Color(red: 217, green: 217, blue: 217)
+}
