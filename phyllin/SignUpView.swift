@@ -66,6 +66,7 @@ struct SignUpView: View {
                 } label: {
                     Text("Already have an account?")
                 }
+                .padding()
                 
                 
                 Text("or")

@@ -66,7 +66,7 @@ struct LoginView: View {
                     Button {
                         viewModel.login(withEmail: email, password: password)
                         print("omg hi")
-                        showHome = true
+//                        showHome = true
                     } label: {
                         Image(systemName: "checkmark")
                             .foregroundColor(.white)
@@ -121,7 +121,6 @@ struct LoginView: View {
                     HStack {
                         Image("fb")
                             .foregroundColor(.white)
-                        
                         Text("sign in with facebook")
                             .font(.system(size: 40))
                             .fontWeight(.semibold)

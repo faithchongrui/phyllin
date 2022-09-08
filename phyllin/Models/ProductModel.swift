@@ -14,6 +14,10 @@ struct Product: Codable, Identifiable {
     let category: String
     let image: String
     let price: Int
+    let description: String
+    var formattedPrice: String {
+        "$\(price)"
+    }
 }
 //    var price: Int
 //    var formattedPrice: String {

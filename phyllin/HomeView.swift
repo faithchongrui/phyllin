@@ -12,6 +12,7 @@ struct HomeView: View {
     @State var SearchQuery = ""
     @State private var searchText = ""
     @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var shop: Shop
     
     @State private var showCart = false
     
@@ -26,7 +27,12 @@ struct HomeView: View {
     var body: some View {
         Group {
             if viewModel.userSession != nil {
-                mainInterfaceView
+                if shop.showingProduct == false && shop.selectedProduct == nil {
+                    mainInterfaceView
+                }
+                else {
+                    ProductDetailView()
+                }
             }
             else {
                 SignUpView()
@@ -84,7 +90,11 @@ extension HomeView {
                 Text("Home")
             }
             
-            Text("Events")
+            Button {
+                viewModel.signOut()
+            } label: {
+                Text("Sign out")
+            }
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Events")
@@ -104,7 +114,6 @@ extension HomeView {
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .ignoresSafeArea()
-        .background(.black)
         .navigate(to: CartView(), when: $showCart)
 
     }
