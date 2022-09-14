@@ -34,7 +34,12 @@ class ShoppingCart: ObservableObject {
                 }
             }
         }
+        print(cartProductDic)
     }
+    func changeQuantity(product: Product, quantity: Int) {
+        cartProductDic[product] = quantity
+    }
+    
     func calculateTotalPrice(){
         var totalprice: Double = 0
         for (product,quantity) in cartProductDic {

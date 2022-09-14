@@ -26,6 +26,7 @@ struct phyllinApp: App {
             HomeView()
                 .environmentObject(Shop())
                 .environmentObject(viewModel)
+                .environmentObject(ShoppingCart())
         }
         
     }

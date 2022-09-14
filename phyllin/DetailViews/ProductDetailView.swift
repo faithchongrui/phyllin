@@ -10,14 +10,16 @@ import SwiftUI
 struct ProductDetailView: View {
     
     @EnvironmentObject var shop: Shop
+    @EnvironmentObject var cart: ShoppingCart
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            //Nav Bar
+//            Nav Bar
+//            Spacer()
             NavigationBarDetailedView()
                 .padding(.horizontal)
             
-            //Header View
+//            Header View
             HeaderDetailView()
                 .padding(.horizontal)
             
@@ -37,7 +39,21 @@ struct ProductDetailView: View {
                 .padding()
                 
                 // Add to cart
-                AddToCartDetailView()
+                Button(action: {
+                    feedback.impactOccurred()
+                    cart.addToCart(addedProduct: shop.selectedProduct!, quantity: 1)
+                }, label: {
+                    Spacer()
+                    Text("Add to cart")
+                        .font(.system(.title2, design: .rounded))
+                        .fontWeight(.bold)
+                        .textCase(.uppercase)
+                        .foregroundColor(.white)
+                    Spacer()
+                }) //: Button
+                    .padding(15)
+                    .background(Colours.evergreen)
+                    .clipShape(Capsule())
                     .padding(.bottom, 20)
                     .padding(.top)
             }
@@ -57,5 +73,6 @@ struct ProductDetailView: View {
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ProductDetailView()
+            .environmentObject(ShoppingCart())
     }
 }

@@ -13,7 +13,7 @@ struct Product: Codable, Identifiable, Hashable {
     let name: String
     let category: String
     let image: String
-    let price: Int
+    let price: Double
     let description: String
     var formattedPrice: String {
         "$\(price)"

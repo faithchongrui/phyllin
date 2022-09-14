@@ -10,6 +10,7 @@ import SwiftUI
 struct AddToCartDetailView: View {
     
     @EnvironmentObject var shop: Shop
+    @EnvironmentObject var cart: ShoppingCart
     
     var body: some View {
         Button(action: {
