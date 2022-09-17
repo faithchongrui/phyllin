@@ -7,13 +7,16 @@
 
 import SwiftUI
 import Firebase
-import FirebaseAuth
 
 final class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
+    
+    private let service = UserService()
     
     init() {
         self.userSession = Auth.auth().currentUser
+        self.fetchUser()
     }
     func login(withEmail email: String, password: String) {
         print("DEBUG: Login with email: \(email)")
@@ -43,27 +46,26 @@ final class AuthViewModel: ObservableObject {
                 "email": email,
                 "username": username,
                 "fullname": fullname,
-                "uid": user.uid
             ]
             
-            let freshSlate =
-            [
-                "cartCheckOut":
-                    [
-                        
-                    ]
-            ]
+//            let freshSlate =
+//            [
+//                "cartCheckOut":
+//                    [
+//
+//                    ]
+//            ]
             Firestore.firestore().collection("users")
                 .document(user.uid)
                 .setData(data) { _ in
                     print("DEBUG: Did upload user data")
                 }
             
-            Firestore.firestore().collection("purchases")
-                .document(user.uid)
-                .setData(freshSlate) { _ in
-                    print("DEBUG: Did upload user data (2)")
-                }
+//            Firestore.firestore().collection("purchases")
+//                .document(user.uid)
+//                .setData(freshSlate) { _ in
+//                    print("DEBUG: Did upload user data (2)")
+//                }
             
             
         }
@@ -74,5 +76,13 @@ final class AuthViewModel: ObservableObject {
         
         // signs user out on server
         try? Auth.auth().signOut()
+    }
+    
+    func fetchUser() {
+        guard let uid = self.userSession?.uid else { return }
+        
+        service.fetchUser(withUid: uid) { user in
+            self.currentUser = user
+        }
     }
 }

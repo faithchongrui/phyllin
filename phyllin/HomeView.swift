@@ -27,7 +27,7 @@ struct HomeView: View {
     var body: some View {
         Group {
             if viewModel.userSession != nil {
-                if shop.showingProduct == false && shop.selectedProduct == nil {
+                if shop.showingProduct == false || shop.selectedProduct == nil {
                     mainInterfaceView
                 }
                 else {
@@ -95,13 +95,6 @@ extension HomeView {
             } label: {
                 Text("Sign out")
             }
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Events")
-                }
-                .navigationBarTitle("")
-                .navigationBarHidden(true)
-
             ProfilePageView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
@@ -109,12 +102,20 @@ extension HomeView {
                 }
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
+            Text("History")
+                .tabItem {
+                    Image(systemName: "clock")
+                    Text("History")
+                }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
+
         }
         .accentColor(Colours.evergreen)
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .ignoresSafeArea()
-        .navigate(to: CartView(), when: $showCart)
+        .navigate(to: CartView(cartProducts: ShoppingCart()), when: $showCart)
 
     }
         

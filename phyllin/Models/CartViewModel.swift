@@ -11,6 +11,7 @@ class ShoppingCart: ObservableObject {
     @Published var cartProduct: [Product] = []
     @Published var cartProductDic: [Product: Int] = [:]
     @Published var totalPrice: Double = 0
+    @Published var showShowcaseSheet: Bool = false
     
     func addToCart(addedProduct: Product, quantity: Int) {
         let products = cartProductDic.map({$0.key})

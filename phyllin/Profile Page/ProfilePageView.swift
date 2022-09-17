@@ -8,47 +8,19 @@
 import SwiftUI
 
 struct ProfilePageView: View {
-    @State var username = "ndgsghdj"
-    @State var balance = 0
+    @State private var username = ""
+    @State private var fullname = ""
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
-    VStack {
-        VStack {
-            Text("\(username)")
-                .fontWeight(.semibold)
-                .font(.system(size: getRelativeFontSize(30)))
-                .foregroundColor(Color.white)
-                .padding()
-                
-            
-            HStack {
-                Text("Balance: $\(balance)")
-                    .fontWeight(.semibold)
-                    .font(.system(size: getRelativeFontSize(30)))
+        if let user = authViewModel.currentUser {
+            NavigationView {
+                Form {
+                    TextField("Name", text: $fullname)
+                    TextField("Username", text: $username)
+                }
+                .navigationTitle("Account")
             }
-            .frame(width: getRelativeWidth(301), height: getRelativeHeight(99), alignment: .center)
-            .background(Color.grey)
-            .cornerRadius(32)
-            .padding()
-        }
-        .frame(width: getRelativeWidth(331), height: getRelativeHeight(195), alignment: .center)
-        .background(Colours.evergreen)
-        .cornerRadius(32)
-        Spacer()
-            .frame(height: 50)
-        VStack(alignment: .center) {
-            Text("History")
-                .font(.system(size: getRelativeFontSize(30)))
-                .fontWeight(.semibold)
-            ScrollView {
-                HistoryEntryItem()
-            }
-            
-        }
-        .frame(width: getRelativeWidth(384), height: getRelativeHeight(522), alignment: .center)
-        .background(Colours.evergreen)
-        .cornerRadius(32)
-        .padding()
-        
         }
     }
 }

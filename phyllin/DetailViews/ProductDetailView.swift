@@ -12,12 +12,14 @@ struct ProductDetailView: View {
     @EnvironmentObject var shop: Shop
     @EnvironmentObject var cart: ShoppingCart
     
+    @State var showHome = false
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
 //            Nav Bar
 //            Spacer()
-            NavigationBarDetailedView()
-                .padding(.horizontal)
+//            NavigationBarDetailedView()
+//                .padding(.horizontal)
             
 //            Header View
             HeaderDetailView()
@@ -42,6 +44,9 @@ struct ProductDetailView: View {
                 Button(action: {
                     feedback.impactOccurred()
                     cart.addToCart(addedProduct: shop.selectedProduct!, quantity: 1)
+                    shop.showingProduct = false
+                    showHome.toggle()
+                    
                 }, label: {
                     Spacer()
                     Text("Add to cart")
@@ -67,6 +72,7 @@ struct ProductDetailView: View {
         }
         .zIndex(0)
         .background(Colours.evergreen).ignoresSafeArea(.all, edges: .all)
+        .navigate(to: HomeView(), when: $showHome)
     }
 }
 
