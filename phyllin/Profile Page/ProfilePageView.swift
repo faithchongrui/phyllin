@@ -16,12 +16,32 @@ struct ProfilePageView: View {
         if let user = authViewModel.currentUser {
             NavigationView {
                 Form {
-                    TextField("Name", text: $fullname)
-                    TextField("Username", text: $username)
+                    Section(header: Text("Personal Information")) {
+                        TextField("\(user.fullname)", text: $fullname)
+                        TextField("\(user.username)", text: $username)
+                    }
+                    Button {
+                        authViewModel.signOut()
+                    } label: {
+                        Text("Logout")
+                    }
                 }
                 .navigationTitle("Account")
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        Button {
+                           hideKeyboard()
+                        } label: {
+                            Image(systemName: "keyboard.chevron.compact.down")
+                        }
+                        Button("Save", action: saveUser)
+                    }
+                }
             }
         }
+    }
+    func saveUser() {
+        print("user saved")
     }
 }
 
@@ -30,3 +50,11 @@ struct ProfilePageView_Previews: PreviewProvider {
         ProfilePageView()
     }
 }
+
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif
