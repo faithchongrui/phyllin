@@ -65,7 +65,7 @@ struct LoginView: View {
                     
                     Button {
                         viewModel.login(withEmail: email, password: password)
-                        print("omg hi")
+                        print("logged in")
 //                        showHome = true
                     } label: {
                         Image(systemName: "checkmark")
@@ -76,9 +76,11 @@ struct LoginView: View {
                             .background(LinearGradient(colors: [.blue, .cyan], startPoint: .leading, endPoint: .trailing))
                             .shadow(color: .init(red: 0.1, green: 0.1, blue: 0.1, opacity: 0.4), radius: 4, x: 0, y: 5)
                             .cornerRadius(20)
-                            .position(x: 350, y: 80)
                         
                     }
+                    
+                    .frame(width: 50, height: 50, alignment: .trailing)
+                    .position(x: 350, y: 80)
                 }
                 .position(x: 215, y: 120)
             }
